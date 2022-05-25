@@ -1,0 +1,141 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 37px;
+}
+
+form {
+	background: #fffff0;
+	padding: 10px;
+}
+
+form div {
+	border-bottom: 1px solid #C6A071;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+}
+
+input {
+	padding: 1rem;
+}
+
+input[type="submit"] {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 50%;
+}
+
+header {
+  background-color: #333;
+  padding: 26px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  background-color:#F5DEB3;
+  width: 20%;
+  float: left;
+  display: table;
+  display: block;
+  height: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 0.7rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: #000;
+	color: #ffffff;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  color: #fff;
+  font-size: 15px;
+}
+
+
+
+

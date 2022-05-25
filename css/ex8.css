@@ -1,0 +1,329 @@
+
+		@import url('layouts-fluidos.css');
+			* {
+			  box-sizing: border-box;
+			}
+
+			
+			section {
+				background:#fffff0;
+			}
+
+			body {
+				background: #fffff0;
+				line-height: 1;
+			}
+
+			p {
+				color:#8B4513 ;
+			}
+
+			html {
+			  font-family:  sans-serif;
+			}
+			.lab {
+				margin-bottom: 5px;
+				font-weight: normal;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #C6A071;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 30px;
+			  color: white;
+              font-family: 'Limelight' , cursive;
+			}
+
+			header > h2 {
+				font-weight: 600;
+			}
+
+			h3 {
+			font:italic bold 1.2rem/2 sans-serif;
+			font-size: 15px;
+            }
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  background-color:#F5DEB3;
+              width: 20%;
+			  float: left;
+    		  display: table;
+    		  display: block;
+    	      height: 100%;
+              padding: 10px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 7px;
+			  margin-left:5px ;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #fffff0;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #C6A071;
+			  padding: 15px;
+			  text-align: center;
+			  color: #ffffff;
+			}
+
+			footer p {
+				color: white;
+				font-size: 18px;
+			}
+
+			.fixar {
+			  bottom: 0;
+              position: fixed;
+              width: 100%;
+              text-align: center;
+    
+			}
+
+			h2:hover {
+				color: #777;
+			}
+
+			a {
+		       color: white;
+			   text-decoration: none; /* o padrão é underline */
+	           font-size: 14px;
+	           display: block;
+	           width: 100%;
+	           height: auto;
+			   padding: 1px;
+}
+
+            li a:hover {
+	           background-color: #000;
+	           color: #ffffff;
+}
+
+            li {
+				line-height: 1.2;
+			}
+
+            ul {
+	          padding-left: .5rem;
+	          margin-left: .5rem;	
+	          background-color: rgba(0, 0, 0, 0.8);
+	          padding: 0.5rem;
+}
+
+	  	 	th h1 {
+		  	  height: 5px;
+            }
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			.pic {
+				width: 100%;
+				height: auto;
+				max-width: 400px;
+			}
+
+			.formu {
+				width: 100%;
+			}
+			
+			.sites , .redes {
+				background-color: #F5DEB3;
+			}
+
+			.sites a:hover,
+			.redes a:hover {
+				background-color: #C6A071;
+			}
+
+			.aulas {
+				margin-bottom: 5px;
+			} 
+
+			.txt {
+				padding: 25px;
+			}
+            
+			.title {
+				margin-left: 5px;
+			}
+
+			/*@media (min-width: 769px) {
+				nav {
+				  width: 30%;
+				}
+				article {
+				  width: 70%;
+				  }
+				.coluna {
+				  width: 50%;
+				  min-width: unset;
+				}
+			  }
+			   Tablet*/
+			  
+            @media (max-width: 768px) {
+				 article, .coluna, .txt{
+					width: 100%;
+					min-width: unset;
+					font-size: 26px;
+				} nav {
+					width: 100%;
+				}
+
+				.frame {
+					width: 500px;
+				}
+
+	             ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+				  }
+
+				  th h1{
+					  font-size: 20px;
+				  }
+				  
+				  li {
+					float: left;
+				  }
+				  
+				  li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 26px;
+					text-decoration: none;
+				  } li {
+					float: left;
+				  }
+				  
+				  a {
+					display: block;
+					padding: 8px;
+				  }
+				 table {
+                 width: 50vh;
+				} .fixar {
+					position: relative;
+				} .formu {
+					width: 100%;
+				}
+
+			  }
+			  /*Smartphone*/
+			  @media(max-width: 500px) {
+				   article, .coluna, .txt, .list{
+				  width: 100%;
+				  min-width: 300px;
+				  font-size: 24px;
+				} 
+                .frame {
+					width: 280px;
+					padding: 10px;
+			  }  nav ul{
+				  width: 100%;
+				  font-size: 15px;
+				  display: grid;
+				  text-align: center;
+				  height: 190px;
+   	 	 		} nav h3 {
+				  text-align: center;
+				  font-weight: bold;
+				  font-size: 16px;
+				}
+				nav {
+					padding: 9px 18px 15px 10px;
+				}
+
+				.redes {
+					display: block;
+					height: 75px;
+					float: inline-end;
+				} .sites {
+					display: flex;
+					height: 75px;
+				}
+              
+			  .icon {
+				width: 13%;	  
+			  } .formu {
+				  width: 100%;
+			  }}
+
+			 	/* Force table to not be like tables anymore */ /* 
+			  table, thead, tbody, th, td, tr { 
+				  display: block; 
+			  }.responsive-table {
+				  width: 90%;
+			  }
+			  
+			  /* Hide table headers (but not display: none;, for accessibility) 
+			  thead tr { 
+				  
+				  position: absolute;
+				  top: -9999px;
+				  left: -9999px;
+			  }
+			  
+			  tr { border: 1px solid #ccc; }
+			  
+			  td { 
+				  /* Behave  like a "row" 
+				  border: none;
+				  border-bottom: 1px solid #eee; 
+				  position: relative;
+				  padding-left: 50%; 
+			  }*/
+			  
+			  /*td:before { 
+				  /* Now like a table header 
+				  position: absolute;
+				   Top/left values mimic padding 
+				  top: 6px;
+				  left: 6px;
+				  width: 45%; 
+				  padding-right: 10px; 
+				  white-space: nowrap;
+			  }*/
+			  
+			  /*
+			  Label the data
+			  
+			  td:nth-of-type(1):before { content: "Posição:"; }
+			  td:nth-of-type(2):before { content: "Clube:"; }
+			  td:nth-of-type(3):before { content: "Partidas:"; }
+			  td:nth-of-type(4):before { content: "Vitórias:"; }
+			  td:nth-of-type(5):before { content: "Empates:"; }
+			  td:nth-of-type(6):before { content: "Derrotas:"; }
+			  td:nth-of-type(7):before { content: "Pontos:"; }
+			  
+			 */
+			
+

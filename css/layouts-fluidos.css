@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #efefef;
+    overflow: overlay;
+}
+
+h1, p {
+    margin-bottom: 20px;
+}
+
+.width-100 {
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    height: 400px;
+}
+
+nav {
+    background-color:#F5DEB3;
+    width: 20%;
+    float: left;
+    display: table;
+    display: block;
+    height: 100%;
+}
+
+article {
+    background-color: ivory;
+    width: 80%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box; /* considera o padding e border na largura e altura */
+}
+
+.fixed-width {
+    background-color: lawngreen;
+    width: 200px;
+    margin: 0 auto;
+}
+.shadowHost-findFont-extension {
+    padding: 0;
+}

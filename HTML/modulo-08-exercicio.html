@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Coffee & Code</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/modulo-08.css">
+		<link rel="stylesheet" type="text/css" href="./css/ex8.css">
+	</head>
+	<body>
+
+		<header>
+			<h2>Coffee & Code</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul class="navegacao">
+					<li><a href="./homepage.html">Homepage</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+					<li><a href="tabelas.html">Tabelas</a></li>
+					<li><a href="Sobre-Mim.html">Sobre Mim</a></li>
+					<li><a href="https://ebaconline.com.br" target="_blank">EBAC</a></li>
+				</ul>
+
+			</nav>
+
+			<article>
+
+				<div>
+					<h1>Sobre Nós</h1>
+					<p>A Coffee & Code é uma empresa do ramo do café, criada por programadores e amantes do café, o nosso diferencial é que em nosso estabelecimento temos internet de alta velocidade e os clientes tem acesso ilimitado pelo dia inteiro e ainda iremos presentear,todo mês, o cliente que tiver mais presenças mensais em nossa loja irá receber 30 dias grátis do editor de imagens Adobe Photoshop.</p>
+				</div>
+
+				<div>
+				 <picture class=pic>
+					   <source srcset="./images/coffee.JPG" media="(min-width: 1000px)"/>
+					   <source srcset="./images/coffee-tablet.jpg" media="(min-width: 600px)"/>
+					   <img src="./images/coffee-phone.jpg" alt="Café" /> 
+				   </picture>
+					
+						
+					
+				</div>
+
+				<div>
+					<h1>Venha nos conhecer !</h1>
+					<p>Para celebrar a abertura da nossa loja, estamos convidando você para vir até nosso estabelecimento, experimentar nosso café, o primeiro é por nossa conta! Para participar preencha o formulário abaixo com as informações solicitadas.</p>
+				</div>
+            <form>
+				<div>
+					<label for="nome">Nome:</label><br>
+					<input type="text" name="nome" id="nome" alt="Digite seu Nome" class="formu">
+				</div>
+				
+				<div>
+					<label for="email">Email:</label><br>
+					<input type="email" name="email" id="email" alt="Digite seu Email" class="formu">
+				</div>
+
+                <div>
+				     <label for="telefone">Telefone:</label><br>
+				     <input type="tel" name="tel" id="tel" alt="Digite seu Telefone" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXX-XXXX"><br><br>
+                </div>
+				<input type="submit" value="Enviar">
+            </form>
+		</section>
+
+		<footer>
+			<p> &copy; Desenvolvido por Matheus</p>
+		</footer>
+		
+	</body>
+</html>
