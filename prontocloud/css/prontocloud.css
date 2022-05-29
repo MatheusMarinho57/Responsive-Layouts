@@ -74,9 +74,7 @@ img {
     width: 100%;
 }
 
-#tenho-interesse form,
-.cognito.c-med .c-forms-form,
-.cognito.c-med .c-forms-form div {
+#tenho-interesse form {
     background-color: #b8c8d6 !important;
 }
 
@@ -90,8 +88,9 @@ ol {
 }
 
 ol li {
-    font-size: 1.4rem;
+    font-size: 16px;
     color: #454545;
+    padding: 5px;
 }
 
 section {
@@ -135,7 +134,7 @@ section article {
 }
 
 footer {
-    background-color: #254159;  
+    background: #254159 !important;  
     display: block;
     float: left;
     padding: 20px;
@@ -168,3 +167,36 @@ footer small {
         padding-right: 1%;
     }
 }
+
+html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after{
+background-color: #b8c8d6;
+overflow: hidden !important;
+}
+span.cog-button__text{
+    background-color: #C24B23 !important;
+}
+path.cog-i-cogicon__cog, .cog-abuse a, span.cog-branding__powered, .cog-branding--minimal{
+    visibility: hidden !important;
+    overflow: hidden !important;
+}
+html .cog-branding--minimal .cog-branding__powered, :root:root:root:root:root .cog-branding--minimal .cog-branding__powered {
+    visibility: hidden !important;
+    overflow: hidden !important;
+    color: #b8c8d6 !important;
+}
+html .cog-branding--minimal, html .cog-branding--minimal *, :root:root:root:root:root .cog-branding--minimal, :root:root:root:root:root .cog-branding--minimal *{
+    visibility: hidden !important;
+    position: fixed !important;
+    overflow: hidden !important;
+    height: 0 !important;
+}
+html .cog-label, :root:root:root:root:root .cog-label{
+    color: #385874 !important;
+    overflow: hidden !important;
+
+}
+.cog-branding .cog-branding--minimal{
+    visibility: hidden !important;
+    overflow: hidden !important;
+}
+
