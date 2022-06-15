@@ -78,6 +78,7 @@ img {
 
 #tenho-interesse form {
     background-color: #b8c8d6 !important;
+   
 }
 
 #tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
@@ -135,6 +136,12 @@ section article {
     width: 70%;
 }
 
+.text-form {
+    text-align: center;
+    margin-left: 372px;
+    width: 637px;
+}
+
 footer {
     background: #254159 !important;  
     display: block;
@@ -146,6 +153,8 @@ footer {
 footer p {
     color: #ffffff;
     font-size: 1.4rem;
+    text-align: center;
+    margin-left: 430px;
 }
 
 footer small {
@@ -157,24 +166,83 @@ footer small {
     height: 350px !important;
     overflow: hidden !important;
 }
-
+/* Smartphone */
 @media (max-width: 425px) {
     section nav,
     section article {
         width: 100% !important;
     }  
 
-    .container {
-        padding-left: 1%;
-        padding-right: 1%;
+    
+    .text-form{
+        margin:22px;
+        max-width: 425px;
+        width: 300px !important;
+        margin-left:0 !important;
+    }
+
+    footer p{
+        margin-left: 0 !important;
+        padding: 0;
+    }
+
+    nav li{
+        width: 100%;
     }
 }
 @media (max-width:768px) {
-    section nav{
-        display: grid;
-        width: 80%;
-    } 
+    section nav,
+    section article{
+       width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav li{
+        display: inline;
+        float: left;
+        margin: 0;
+        
+    }
+
+    li a{
+        display: block;
+        padding: 8px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .text-form {
+        margin-left: 130px;
+        width: 450px;
+    }
+
+    footer p{
+        margin-left: 105px;
+    }
+    
 }
+
+
+    
+
+
+@media (min-width:600px) and (max-width:640px) {
+    .text-form{
+        width:400px;
+        margin-left: 90px;
+    }
+
+   
+
+    footer p{
+        margin-left: 54px;
+    }
+}
+
 
 html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after{
 background-color: #b8c8d6;
@@ -206,5 +274,13 @@ html .cog-label, :root:root:root:root:root .cog-label{
 .cog-branding .cog-branding--minimal{
     visibility: hidden !important;
     overflow: hidden !important;
+}
+
+
+
+
+html .cog-form__container, :root:root:root:root:root .cog-form__container{
+    background-color: #b8c8d6 !important;
+    overflow: hidden;
 }
 
